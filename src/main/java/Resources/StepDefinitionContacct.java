@@ -1,5 +1,6 @@
 package Resources;
 
+import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -22,7 +23,8 @@ public class StepDefinitionContacct {
     }
 
     @When("^populate the contact form$")
-    public void populate_the_contact_form() throws Throwable {
+    public void populate_the_contact_form(DataTable table) throws Throwable {
+        System.out.println(table);
         // Write code here that turns the phrase above into concrete actions
     }
 
